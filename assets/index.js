@@ -307,6 +307,22 @@ window.addEventListener('DOMContentLoaded',()=>{
         //console.log(`Chargeable Income: ${amount}`); //dom output 10
         return amount;
     }
+
+    //calculate net pay
+    const getNetPay = () => {
+        //total taxable income - all other deductions
+        // getTotalTaxibleIncome - (getNHIF() + getPAYE() + getPersonalRelief() + getDeductibleNSSF())
+        let paye = getPAYE();
+        let nhif = deductNHIF()
+        let relief = getPersonalRelief();
+        let nssf = deductNSSF()
+        let totalAmount = totalIncome();
+
+        let pay = totalAmount - (paye + nhif + relief + nssf);
+        document.querySelector(".val12").textContent = pay;
+        ///console.log(`Net pay: ${pay}`); //dom output 12
+        return pay;
+    }
 })
 
 })
