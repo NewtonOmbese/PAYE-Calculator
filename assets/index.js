@@ -22,6 +22,22 @@ window.addEventListener('DOMContentLoaded',()=>{
     let deduct_nhif //= true;
     let monthly = true;
     let isNewRates //= true;
+
+    //handle input change
+    document.querySelectorAll("input[type=text]").forEach((input, i) => {
+        console.log(input)
+        input.addEventListener('change', () => {
+            if (i === 0){
+                salary = parseInt(input.value);
+                console.log(salary)
+            }
+
+            if(i === 1){
+                benefits = parseInt(input.value);
+                console.log(benefits)
+            }
+        })
+    })
 })
 
 })
