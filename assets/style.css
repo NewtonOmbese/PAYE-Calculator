@@ -8,7 +8,6 @@ body, .banner{
     position: relative;
     height: 100vh;
     width: auto;
-    background-color: rgb(252, 252, 252);
 }
 
 main{
@@ -135,6 +134,7 @@ main .part2 form .row .left-row h5 {
 
 main .part2 form .row .right-r {
     text-align: center;
+    margin-left: 40px;
 }
 
 main .part2 form .row .right-r h6 {
