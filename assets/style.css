@@ -145,7 +145,7 @@ main .part2 form .row .right-r h6 span {
     padding-left: 1rem;
 }
   
-@media screen and (max-width: 425px) {
+/* @media screen and (max-width: 425px) {
     body, .banner {
       min-height: 100%;
     }
@@ -310,4 +310,4 @@ main .part2 form .row .right-r h6 span {
       align-items: center;
       margin-top: 1rem;
     }
-}
+} */
