@@ -99,6 +99,7 @@ main .part1 form .row .right-r label input[type=checkbox]:checked {
     color: black;
     background-color: rgb(3, 3, 26);
 }
+
 main .part1 form .calc-btn {
     margin: 1.5rem auto;
     transform: translateX(40%);
@@ -111,3 +112,47 @@ main .part1 form .calc-btn {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+main .part2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .part2 form {
+    position: relative;
+    border: 2px solid rgba(3, 3, 26, 0.582);
+    width: 60%;
+}
+
+main .part2 form .row {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    padding: 1rem 1rem;
+}
+
+main .part2 form .row .left-row {
+    padding-right: 2rem;
+}
+
+main .part2 form .row .left-row h5 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+main .part2 form .row .right-r {
+    text-align: center;
+}
+
+main .part2 form .row .right-r h6 {
+    font-size: 1.2rem;
+}
+
+main .part2 form .row .right-r h6 span {
+    padding-left: 1rem;
+}
+  
