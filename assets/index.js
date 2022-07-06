@@ -87,6 +87,20 @@ window.addEventListener('DOMContentLoaded',()=>{
             monthly = false;
         }
     });
+
+    //total income
+    const totalIncome = () => {
+        let total = 0;
+        //check if value is null or less than zero
+        if (salary !== null && benefits !== null) {
+            if (salary >= 0 && benefits >= 0) {
+                total += salary + benefits;
+            }
+        }
+        document.querySelector(".val1").textContent = total;
+        //console.log(`Total income: ${total}`); //dom output 1
+        return total;
+    }
 })
 
 })
