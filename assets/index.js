@@ -348,6 +348,6 @@ window.addEventListener('DOMContentLoaded',()=>{
         //invoke calculate method
         calculate();
     });
-})
+});
 
-})
+})();
