@@ -323,6 +323,22 @@ window.addEventListener('DOMContentLoaded',()=>{
         ///console.log(`Net pay: ${pay}`); //dom output 12
         return pay;
     }
+
+    const calculate = () => {
+        //invoke all methods
+        totalIncome();
+        deductNSSF();
+        getIncomeAfterPension()
+        getBenefitsInKind();
+        getTaxableIncome();
+        getTaxOnTaxableIncome()
+        getPersonalRelief();
+        getTaxOffRelief();
+        getPAYE();
+        getChargeableIncome();
+        deductNHIF();
+        getNetPay();
+    }
 })
 
 })
