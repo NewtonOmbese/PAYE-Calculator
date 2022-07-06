@@ -51,6 +51,18 @@ window.addEventListener('DOMContentLoaded',()=>{
             deduct_nhif = false;
         }
     })
+
+    yesNSSF.addEventListener('change', function () {
+        if (this.checked) {
+            deduct_nssf = true;
+        }
+    })
+
+    noNSSF.addEventListener('change', function () {
+        if (this.checked) {
+            deduct_nssf = false;
+        }
+    })
 })
 
 })
