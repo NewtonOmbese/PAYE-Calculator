@@ -38,6 +38,19 @@ window.addEventListener('DOMContentLoaded',()=>{
             }
         })
     })
+
+    //handler for checkboxes
+    yesNHIF.addEventListener('change', function(){
+        if(this.checked){
+            deduct_nhif = true;
+        }
+    })
+
+    noNHIF.addEventListener('change', function () {
+        if (this.checked) {
+            deduct_nhif = false;
+        }
+    })
 })
 
 })
