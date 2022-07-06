@@ -75,6 +75,18 @@ window.addEventListener('DOMContentLoaded',()=>{
             isNewRates = false;
         }
     });
+
+    monthBox.addEventListener('change', function () {
+        if (this.checked) {
+            monthly = true;
+        }
+    });
+
+    yearBox.addEventListener('change', function () {
+        if (this.checked) {
+            monthly = false;
+        }
+    });
 })
 
 })
