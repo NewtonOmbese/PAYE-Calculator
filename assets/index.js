@@ -208,6 +208,17 @@ window.addEventListener('DOMContentLoaded',()=>{
         return nhifAmount;
     }
 
+    //calculate income after pension deduction
+    const getIncomeAfterPension = () => {
+        //income before pension - all deductible nssf pension contribution
+        //return getTotalTaxableIncome() - 200; //getDeductibleNSSF() pension
+        let newIncome = totalIncome() - deductNSSF();
+
+        //console.log(`Income After Pension: ${newIncome}`); //dom utput 3
+        document.querySelector(".val3").textContent = newIncome;
+        return newIncome;
+    }
+
 })
 
 })
