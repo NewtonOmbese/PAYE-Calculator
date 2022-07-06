@@ -280,7 +280,15 @@ window.addEventListener('DOMContentLoaded',()=>{
         document.querySelector(".val7").textContent = relief;
         return relief;
     }
-
+    
+     //tax net off relief also similiar to PAYE
+     const getTaxOffRelief = () => {
+        //Tax on taxable income - personal relief
+        let amount = getTaxOnTaxableIncome() - getPersonalRelief();
+        document.querySelector(".val8").textContent = amount;
+        //console.log(`Tax off Relief: ${amount}`) //dom output 8
+        return amount;
+    }
 })
 
 })
