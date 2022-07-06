@@ -30,3 +30,20 @@ main{
     grid-template-columns: repeat(2, 1fr);
     background: rgb(250, 245, 245);
 }
+
+main .part1{
+    position: relative;
+    border-right: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .part1 form{
+    position: relative;
+    width: 60%;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px rgba(3, 3, 26, 0.205);
+}
+
