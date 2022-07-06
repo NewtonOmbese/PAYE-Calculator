@@ -339,6 +339,15 @@ window.addEventListener('DOMContentLoaded',()=>{
         deductNHIF();
         getNetPay();
     }
+
+    //perform calculations when calculate button is clicked
+    calculateBtn.addEventListener('click', () => {
+        console.log("starting calculation")
+        console.log(salary)
+        console.log(benefits)
+        //invoke calculate method
+        calculate();
+    });
 })
 
 })
