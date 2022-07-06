@@ -14,3 +14,10 @@
     --primary: rgb(3, 3, 26);
     --secondary: rgb(248, 247, 247);
 }
+
+body, .banner{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(252, 252, 252);
+}
