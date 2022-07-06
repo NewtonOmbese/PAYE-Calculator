@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --padding1: 1rem;
+    --padding2: 2rem;
+    --padding3: 3rem;
+    --margin1: 1rem;
+    --margin2: 2rem;
+    --margin3: 3rem;
+    --primary: rgb(3, 3, 26);
+    --secondary: rgb(248, 247, 247);
+}
