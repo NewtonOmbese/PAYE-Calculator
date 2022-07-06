@@ -266,6 +266,21 @@ window.addEventListener('DOMContentLoaded',()=>{
         return amount;
     }
 
+    //personal relief
+    const getPersonalRelief = () => {
+        let relief = 0;
+
+        if (monthly) {
+            relief += 2400;
+            //console.log(`Monthly relief: ${relief}`); //dom output 7
+        } else {
+            relief += 28800;
+            //console.log(`Annual relief: ${relief}`); //dom output 7 
+        }
+        document.querySelector(".val7").textContent = relief;
+        return relief;
+    }
+
 })
 
 })
