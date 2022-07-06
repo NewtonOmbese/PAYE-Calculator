@@ -119,6 +119,25 @@ window.addEventListener('DOMContentLoaded',()=>{
         document.querySelector(".val2").textContent = deduction;
         return deduction;
     }
+
+    //deduct NSSF//////
+    const deductNHIF = () => {
+        let deduction = 0;
+        if (deduct_nhif) { //true
+            //perform deduction operation
+            deduction += nhifDeduction();
+
+            //console.log(`NHIF amount: ${deduction}`) //dom output 11
+        } else {
+            //set NSSF deduction to zero
+            deduction = 0;
+            //console.log(`NHIF not deducted: ${deduction}`) //dom output 11
+        }
+
+        document.querySelector(".val11").textContent = deduction;
+        return deduction;
+    }
+
 })
 
 })
