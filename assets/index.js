@@ -138,6 +138,24 @@ window.addEventListener('DOMContentLoaded',()=>{
         return deduction;
     }
 
+    //not sending output to dom
+    const nssfDeduction = () => {
+        let salary = totalIncome();
+        let nssfAmount = 0;
+
+        if (isNewRates) {//new rates
+            if (salary > 18000) { //when pensionable salary > 18000 deuct flat rate = 2160
+                nssfAmount += 2160;
+            } else {
+                nssfAmount += salary * 0.12;
+            }
+        } else { //old rates
+            nssfAmount += 200;
+        }
+
+        return nssfAmount;
+    }
+
 })
 
 })
