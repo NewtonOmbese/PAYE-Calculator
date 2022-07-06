@@ -230,6 +230,13 @@ window.addEventListener('DOMContentLoaded',()=>{
         }
     }
 
+    //get taxable income
+    const getTaxableIncome = () => {
+        let taxableIncome = totalIncome() - deductNSSF();
+        document.querySelector(".val5").textContent = taxableIncome;
+        //console.log(`taxable Income: ${taxableIncome}`); // dom output 5
+        return taxableIncome;
+    }
 })
 
 })
