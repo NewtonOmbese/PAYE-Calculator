@@ -219,6 +219,17 @@ window.addEventListener('DOMContentLoaded',()=>{
         return newIncome;
     }
 
+    // get benefits of kind
+    const getBenefitsInKind = () => {
+        if (benefits !== null && benefits > 0) {
+            document.querySelector(".val4").textContent = benefits;
+            //console.log(`Benefits: ${benefits}`); //dom output 4
+        } else {
+            document.querySelector(".val4").textContent = 0;
+            //set value of benefits = 0 //dom output 4
+        }
+    }
+
 })
 
 })
