@@ -237,6 +237,35 @@ window.addEventListener('DOMContentLoaded',()=>{
         //console.log(`taxable Income: ${taxableIncome}`); // dom output 5
         return taxableIncome;
     }
+
+    //tax on taxable income
+    const getTaxOnTaxableIncome = () => {
+
+        let income = totalIncome();
+        let amount = 0;
+        //what is the monthly payable
+        if (income <= 12, 298) {
+            //val = income * 0.1;
+            amount += income * 0.1;
+        } else if (income >= 12999 && income <= 23885) {
+            //val = income * 0.15;
+            amount += income * 0.15;
+        } else if (income >= 23886 && income <= 35472) {
+            //val = income * 0.2;
+            amount += income * 0.2;
+        } else if (income >= 35473 && income <= 47059) {
+            //val = income * 0.25;
+            amount += income * 0.25;
+        } else if (income > 47059) {
+            //val = income * 0.3;
+            amount += income * 0.3;
+        }
+
+        //console.log(`Tax on Taxable Income: ${amount}`)
+        document.querySelector(".val6").textContent = amount;
+        return amount;
+    }
+
 })
 
 })
