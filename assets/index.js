@@ -101,6 +101,24 @@ window.addEventListener('DOMContentLoaded',()=>{
         //console.log(`Total income: ${total}`); //dom output 1
         return total;
     }
+
+    //deduct NSSF/////////
+    const deductNSSF = () => {
+        let deduction = 0;
+        if (deduct_nssf) { //true
+            //perform deduction operation
+            deduction += nssfDeduction();
+            //console.log(`NSSF amount: ${deduction}`) //dom output 2
+
+        } else {
+            //set NSSF deduction to zero
+            deduction = 0; //flag
+            //console.log(`NSSF not deducted: ${deduction}`) //dom output 2
+        }
+
+        document.querySelector(".val2").textContent = deduction;
+        return deduction;
+    }
 })
 
 })
