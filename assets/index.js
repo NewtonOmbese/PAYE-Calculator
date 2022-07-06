@@ -289,6 +289,15 @@ window.addEventListener('DOMContentLoaded',()=>{
         //console.log(`Tax off Relief: ${amount}`) //dom output 8
         return amount;
     }
+
+    // get PAYE |similar to tax net off relief|
+    const getPAYE = () => {
+        //Tax on taxable income - personal relief
+        let amount = getTaxOnTaxableIncome() - getPersonalRelief();
+        document.querySelector(".val9").textContent = amount;
+        //console.log(`PAYE: ${amount}`); //dom output 9
+        return amount;
+    }
 })
 
 })
