@@ -298,6 +298,15 @@ window.addEventListener('DOMContentLoaded',()=>{
         //console.log(`PAYE: ${amount}`); //dom output 9
         return amount;
     }
+
+    //get chargeable income | similar to income after pension deduction |
+    const getChargeableIncome = () => {
+        //income before pension - NSSF pension
+        let amount = totalIncome() - deductNSSF();
+        document.querySelector(".val10").textContent = amount;
+        //console.log(`Chargeable Income: ${amount}`); //dom output 10
+        return amount;
+    }
 })
 
 })
