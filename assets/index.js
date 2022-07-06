@@ -63,6 +63,18 @@ window.addEventListener('DOMContentLoaded',()=>{
             deduct_nssf = false;
         }
     })
+
+    newRates.addEventListener('change', function () {
+        if (this.checked) {
+            isNewRates = true;
+        }
+    });
+
+    oldRates.addEventListener('change', function () {
+        if (this.checked) {
+            isNewRates = false;
+        }
+    });
 })
 
 })
