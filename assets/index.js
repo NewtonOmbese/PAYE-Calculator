@@ -156,6 +156,58 @@ window.addEventListener('DOMContentLoaded',()=>{
         return nssfAmount;
     }
 
+    // get NHIF contribution
+    const nhifDeduction = () => {
+        let salary = totalIncome();
+        let nhifAmount = 0;
+
+        if (salary >= 1000) {
+
+            if (salary >= 1000 && salary <= 5999) {
+                nhifAmount += 150;
+            } else if (salary >= 6000 && salary <= 7999) {
+                nhifAmount += 300;
+            } else if (salary >= 8000 && salary <= 11999) {
+                nhifAmount += 400;
+            } else if (salary >= 12000 && salary <= 14999) {
+                nhifAmount += 500;
+            } else if (salary >= 15000 && salary <= 19999) {
+                nhifAmount += 600;
+            } else if (salary >= 20000 && salary <= 24999) {
+                nhifAmount += 750;
+            } else if (salary >= 25000 && salary <= 29999) {
+                nhifAmount += 850;
+            } else if (salary >= 30000 && salary <= 34999) {
+                nhifAmount += 900;
+            } else if (salary >= 35000 && salary <= 39999) {
+                nhifAmount += 950;
+            } else if (salary >= 40000 && salary <= 44999) {
+                nhifAmount += 1000;
+            } else if (salary >= 45000 && salary <= 49999) {
+                nhifAmount += 1100;
+            } else if (salary >= 50000 && salary <= 59999) {
+                nhifAmount += 1200;
+            } else if (salary >= 60000 && salary <= 69999) {
+                nhifAmount += 1300;
+            } else if (salary >= 70000 && salary <= 79999) {
+                nhifAmount += 1400;
+            } else if (salary >= 80000 && salary <= 89999) {
+                nhifAmount += 1500;
+            } else if (salary >= 90000 && salary <= 99999) {
+                nhifAmount += 1600;
+            } else if (salary >= 100000) {
+                nhifAmount += 1700;
+            }
+
+        } else {
+            //return `can't contribute NHIF if salary is less than 1000`;
+            //console.log("less salary, cant deduct")
+            nhifAmount += 0;
+        }
+
+        return nhifAmount;
+    }
+
 })
 
 })
