@@ -245,8 +245,14 @@ main .part2 form .row .right-r h6 span {
       font-size: 0.8rem;
       height: 5vh;
     }
+    main .part1 form .row .right-r{
+      margin-right: 250px;
+    }
     main .part1 form .row .right-r input[type=text] {
       width: 150px;
+    }
+    main .part1 form .row .right-r input[type=checkbox]{
+      margin-left: 0px;
     }
     main .part1 form .calc-btn {
       width: 65% !important;
