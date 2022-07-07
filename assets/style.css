@@ -146,8 +146,13 @@ main .part2 form .row .right-r h6 span {
 }
   
 @media screen and (max-width: 425px) {
+    *{
+      font-size: 10px;
+    }
+  
     body, .banner {
       min-height: 100%;
+      width: auto;
     }
 
     main {
@@ -170,6 +175,9 @@ main .part2 form .row .right-r h6 span {
     }
     main .part1 form .row .left-row h5 {
      font-size: 0.8rem;
+    }
+    main .part1 form .row .right-r{
+      margin-right: 300px;
     }
     main .part1 form .row .right-r label {
       font-size: 1rem;
