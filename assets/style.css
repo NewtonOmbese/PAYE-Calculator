@@ -183,8 +183,11 @@ main .part2 form .row .right-r h6 span {
       font-size: 1rem;
       margin-right: 50px;
     }
+    main .part1 form .row .right-r .dedu{
+      margin-left:-55px;
+    }
     main .part1 form .calc-btn {
-      width: 92% !important;
+      width: 65% !important;
       height: 50px;
       margin: 1rem 0;
       transform: translateX(0);
@@ -217,12 +220,11 @@ main .part2 form .row .right-r h6 span {
 @media screen and (max-width: 375px) {
     body, .banner {
       min-height: 100%;
-      display: flex;
-      flex-direction: column;
     }
   
     main {
       display: flex;
+      width: 100%;
       height: auto;
       flex-direction: column;
     }
@@ -244,10 +246,10 @@ main .part2 form .row .right-r h6 span {
       height: 5vh;
     }
     main .part1 form .row .right-r input[type=text] {
-      width: 100%;
+      width: 150px;
     }
     main .part1 form .calc-btn {
-      width: 90% !important;
+      width: 65% !important;
       height: 50px;
       margin: 1rem 0;
       transform: translateX(0);
