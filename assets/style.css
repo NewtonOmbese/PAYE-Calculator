@@ -145,7 +145,7 @@ main .part2 form .row .right-r h6 span {
     padding-left: 1rem;
 }
   
-/* @media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {
     body, .banner {
       min-height: 100%;
     }
@@ -192,7 +192,7 @@ main .part2 form .row .right-r h6 span {
       padding-right: 0;
     }
     main .part1 form .row .left-row h5 {
-      font-size: 0.8rem;
+     font-size: 0.8rem;
     }
     main .part1 form .row .right-r label {
       font-size: 1rem;
@@ -227,7 +227,7 @@ main .part2 form .row .right-r h6 span {
       margin-top: 1rem;
     }
 }
- 
+
 @media screen and (max-width: 375px) {
     body, .banner {
       min-height: 100%;
@@ -310,4 +310,4 @@ main .part2 form .row .right-r h6 span {
       align-items: center;
       margin-top: 1rem;
     }
-} */
+}
