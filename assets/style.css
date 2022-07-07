@@ -149,30 +149,7 @@ main .part2 form .row .right-r h6 span {
     body, .banner {
       min-height: 100%;
     }
-  
-    header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    header .side1 {
-      display: none;
-    }
-    header .side2 {
-      align-items: center;
-    }
-    header .side2 p {
-      text-align: center;
-      font-size: 1.3rem;
-    }
-    header .side2 h2 {
-      font-size: 3rem;
-      text-align: center;
-    }
-    header input {
-      margin-top: 1.5rem;
-    }
-  
+
     main {
       display: flex;
       height: auto;
@@ -231,29 +208,8 @@ main .part2 form .row .right-r h6 span {
 @media screen and (max-width: 375px) {
     body, .banner {
       min-height: 100%;
-    }
-  
-    header {
       display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    header .side1 {
-      display: none;
-    }
-    header .side2 {
-      align-items: center;
-    }
-    header .side2 p {
-      text-align: center;
-      font-size: 1.3rem;
-    }
-    header .side2 h2 {
-      font-size: 3rem;
-      text-align: center;
-    }
-    header input {
-      margin-top: 1.5rem;
+      flex-direction: column;
     }
   
     main {
